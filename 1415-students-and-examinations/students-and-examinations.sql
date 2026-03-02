@@ -1,4 +1,4 @@
-select a.student_id,a.student_name, b.subject_name, count(c.student_id) as attended_exams 
+select a.student_id,a.student_name, b.subject_name, count(c.subject_name) as attended_exams 
 from students as a 
 cross join subjects as b
 left join examinations as c
